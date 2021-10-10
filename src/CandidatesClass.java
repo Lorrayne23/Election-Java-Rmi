@@ -6,6 +6,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.rmi.RemoteException;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 
 public class CandidatesClass {
@@ -14,11 +16,13 @@ public class CandidatesClass {
     public String candidateCod;
     public String candidateEntourage;
 
+
     public CandidatesClass(String candidateCod,String candidateName,String candidateEntourage){
         this.candidateCod = candidateCod;
         this.candidateName = candidateName;
         this.candidateEntourage = candidateEntourage;
     }
+
 
     public void setCandidateCod(String candidateCod) {
         this.candidateCod = candidateCod;
