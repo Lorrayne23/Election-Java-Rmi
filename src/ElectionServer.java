@@ -23,7 +23,7 @@ public class ElectionServer implements Election {
     @Override
     public void Candidades() throws RemoteException {
         try{
-            File fileCandidates = new File("./file/senadores.csv");
+            File fileCandidates = new File("src/File/senadores.csv");
             BufferedReader bf = new BufferedReader(new FileReader(fileCandidates));
             String line;
             bf.readLine();
